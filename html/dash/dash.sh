@@ -12,7 +12,7 @@ for i in {1..10}
         #echo "Free Memory: $FREE"
         #echo "Free Memory: $CACHE"
 
-        sqlite3 dashboard.sqlite "insert into memory (free,used,cache,total) values ($FREE,$USED,$CACHE,$TOTAL);"
+        sqlite3 ../db/dashboard.sqlite "insert into memory (free,used,cache,total) values ($FREE,$USED,$CACHE,$TOTAL);"
         #sqlite3 dashboard.sqlite "select * from memory LIMIT 5;"
 
         echo $i
