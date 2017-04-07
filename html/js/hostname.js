@@ -1,11 +1,13 @@
 function readTextFile(file){
 
+    var runfile = "dash/hostname.sh";
+
     $.ajax({
       type: 'HEAD',
       url: file,
       complete: function (xhr){
         if (xhr.status == 404){
-          alert("(ERROR) File: " + file + " not exists. Run dash/ip.sh!!!"); // Not found
+          alert("(ERROR) File: " + file + " not exists. Run " + runfile + "!!!"); // Not found
         }
       }
     });
@@ -16,12 +18,11 @@ function readTextFile(file){
     {
       if (txtFile.readyState === 4) {  // document is ready to parse.
         if (txtFile.status === 200) {  // file is found
-          document.getElementById("internalip").innerHTML = txtFile.responseText.split("\n")[0];
-          document.getElementById("externalip").innerHTML = txtFile.responseText.split("\n")[1];
+          document.getElementById("hostname").innerHTML = txtFile.responseText.split("\n")[0];
         }
       }
     }
     txtFile.send(null);
 }
 
-readTextFile("../dash/ip.txt");
+readTextFile("../dash/hostname.txt");

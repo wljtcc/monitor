@@ -1,11 +1,13 @@
 function readTextFile(file){
 
+    var runfile = "dash/ip.sh";
+
     $.ajax({
       type: 'HEAD',
       url: file,
       complete: function (xhr){
         if (xhr.status == 404){
-          alert("(ERROR) File: " + file + " not exists. Run dash/ip.sh!!!"); // Not found
+          alert("(ERROR) File: " + file + " not exists. Run " + runfile + "!!!"); // Not found
         }
       }
     });

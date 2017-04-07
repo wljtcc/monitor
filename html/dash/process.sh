@@ -22,7 +22,8 @@ while true; do
   let "DIFF_TOTAL=$TOTAL-$PREV_TOTAL"
   let "DIFF_USAGE=(1000*($DIFF_TOTAL-$DIFF_IDLE)/$DIFF_TOTAL+5)/10"
   #echo -en "\rCPU: $DIFF_USAGE%  \b\b"
-  echo "$DIFF_USAGE" > proc.txt
+  echo "$DIFF_USAGE" > process.txt
+  echo "$DIFF_USAGE"
 
   # Remember the total and idle CPU times for the next check.
   PREV_TOTAL="$TOTAL"
@@ -32,7 +33,7 @@ while true; do
   #sqlite3 ../db/dashboard.sqlite "insert into proc (proc) values ($DIFF_USAGE);"
 
   # Wait before checking again.
-  sleep 1
+  sleep 2
 
 done
 
