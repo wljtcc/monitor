@@ -66,8 +66,11 @@
     <script src="js-test/tcpu.js"></script>
     <!-- MEMORY -->
     <script src="js-test/tmemory.js"></script>
-    <!-- PROCESS -->
+    <!-- PROCESSING -->
     <script src="js-test/tprocess.js"></script>
+    <!-- PROCESS -->
+    <script src="js-test/tps.js"></script>
+
 
 
     <body>
@@ -90,20 +93,7 @@
     <br/>
     PROCESSAMENTO: <span id="process"></span><br/>
 
-    <section class="content">
-        <!-- AREA CHART -->
-        <!-- <div class="box box-primary">
-            <div class="box-header with-border">
-                <h3 class="box-title">Area Chart</h3>
-            </div>
-            <div class="box-body">
-                <div class="chart">
-                    <canvas id="areaChart" style="height:250px"></canvas>
-                </div>
-            </div>
-            <!-- /.box-body -->
-        </div>
-        <!-- /.box -->
+    <div class="row">
         <div class="col-md-6">
 
             <div class="box box-primary">
@@ -120,12 +110,74 @@
             </div>
             <!-- /.box -->
         </div>
+    </div>
 
-
-    </section>
-    <!-- /.content -->
-
-    <script>
-
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Processos (top 15 - MEM / CPU)</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body no-padding">
+                        <table class="table table-condensed">
+                            <tr>
+                                <th style="width: 10px">#</th>
+                            </tr>
+                            <tr>
+                                <td><span id="ps01"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps02"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps03"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps04"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps05"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps06"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps07"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps08"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps09"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps10"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps11"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps12"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps13"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps14"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps15"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="ps16"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
 </body>
 </html>

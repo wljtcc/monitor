@@ -123,6 +123,6 @@ function InteractiveChart() {
 
  };
 
-setInterval(function(){
+//setInterval(function(){
     readTextFile("../dash/process.txt");
-}, 1000);
+//}, 1000);

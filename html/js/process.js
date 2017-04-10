@@ -122,6 +122,6 @@ function InteractiveChart() {
 
   };
 
-setInterval(function(){
+//setInterval(function(){
     readTextFile("../dash/process.txt");
-}, 2000);
+//}, 2000);
