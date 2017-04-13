@@ -14,6 +14,10 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="./css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="css/skins/_all-skins.min.css">
+
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="./dist/css/skins/_all-skins.min.css">
 
@@ -38,25 +42,26 @@
         </script>
 
     <!-- jQuery 2.2.3 -->
-    <script src="./plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
     <!-- Bootstrap 3.3.6 -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="./plugins/fastclick/fastclick.js"></script>
+    <script src="plugins/fastclick/fastclick.js"></script>
     <!-- AdminLTE App -->
-    <script src="./js/app.min.js"></script>
+    <script src="js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="./js/demo.js"></script>
+    <script src="js/demo.js"></script>
     <!-- ChartJS 1.0.1 -->
-    <script src="./plugins/chartjs/Chart.min.js"></script>
+    <script src="plugins/chartjs/Chart.min.js"></script>
     <!-- FLOT CHARTS -->
-    <script src="./plugins/flot/jquery.flot.min.js"></script>
+    <script src="plugins/flot/jquery.flot.min.js"></script>
     <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
-    <script src="./plugins/flot/jquery.flot.resize.min.js"></script>
+    <script src="plugins/flot/jquery.flot.resize.min.js"></script>
     <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-    <script src="./plugins/flot/jquery.flot.pie.min.js"></script>
+    <script src="plugins/flot/jquery.flot.pie.min.js"></script>
     <!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-    <script src="./plugins/flot/jquery.flot.categories.min.js"></script>
+    <script src="plugins/flot/jquery.flot.categories.min.js"></script>
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
 
     <!-- IP -->
     <script src="js-test/tip.js"></script>
@@ -97,87 +102,60 @@
         <div class="col-md-6">
 
             <div class="box box-primary">
-            <div class="box-header with-border">
-                <i class="fa fa-bar-chart-o"></i>
+                <div class="box-header with-border">
+                    <i class="fa fa-bar-chart-o"></i>
 
-                <h3 class="box-title">Interactive Area Chart</h3>
+                    <h3 class="box-title">Interactive Area Chart</h3>
 
+                </div>
+                <div class="box-body">
+                    <div id="interactive" style="height: 300px;"></div>
+                </div>
             </div>
-            <div class="box-body">
-                <div id="interactive" style="height: 300px;"></div>
-            </div>
-            <!-- /.box-body-->
-            </div>
-            <!-- /.box -->
         </div>
     </div>
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="box">
-                    <div class="box-header">
-                        <h3 class="box-title">Processos (top 15 - MEM / CPU)</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-default collapsed-box">
+                <div class="box-header with-border">
+                    <h3 class="box-title"><i class="fa fa-bar-chart-o"></i>Interactive Area Chart</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus-circle"></i>
+                        </button>
                     </div>
-                    <!-- /.box-header -->
-                    <div class="box-body no-padding">
-                        <table class="table table-condensed">
-                            <tr>
-                                <th style="width: 10px">#</th>
-                            </tr>
-                            <tr>
-                                <td><span id="ps01"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps02"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps03"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps04"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps05"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps06"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps07"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps08"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps09"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps10"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps11"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps12"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps13"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps14"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps15"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span id="ps16"></span></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- /.box-body -->
+                    <!-- /.box-tools -->
                 </div>
-                <!-- /.box -->
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div id="interactive" style="height: 300px;"></div>
+                </div>
+                <!-- /.box-body -->
             </div>
+            <!-- /.box -->
         </div>
+        <!-- /.col -->
+        <div class="col-md-3">
+            <div class="box box-default collapsed-box">
+                <div class="box-header with-border">
+                    <h3 class="box-title"><i class="fa fa-gears"></i>Current Processes (Top 15)</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus-circle"></i>
+                        </button>
+                    </div>
+                    <!-- /.box-tools -->
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    The body of the boxwwww
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    </div>
 </body>
 </html>

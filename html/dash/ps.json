@@ -1,0 +1,107 @@
+[ 
+	{ 
+		"pid": "31814",
+		"uname": "welling+",
+		"cmd": "/opt/vivaldi/vivaldi-bin",
+		"pmem": "--",
+		"pcpu": "15.1"
+	}, 
+	{ 
+		"pid": "17298",
+		"uname": "welling+",
+		"cmd": "/home/wellington.jorge/.loc",
+		"pmem": "10.6",
+		"pcpu": "3.7"
+	}, 
+	{ 
+		"pid": "4767",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "6.0",
+		"pcpu": "2.3"
+	}, 
+	{ 
+		"pid": "6723",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "5.2"
+	}, 
+	{ 
+		"pid": "27482",
+		"uname": "welling+",
+		"cmd": "/opt/vivaldi/vivaldi-bin",
+		"pmem": "--",
+		"pcpu": "4.0"
+	}, 
+	{ 
+		"pid": "5168",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "3.7"
+	}, 
+	{ 
+		"pid": "5204",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "3.5"
+	}, 
+	{ 
+		"pid": "4049",
+		"uname": "welling+",
+		"cmd": "cinnamon",
+		"pmem": "--replace",
+		"pcpu": "2.6"
+	}, 
+	{ 
+		"pid": "5246",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "2.6"
+	}, 
+	{ 
+		"pid": "4100",
+		"uname": "welling+",
+		"cmd": "nemo",
+		"pmem": "-n",
+		"pcpu": "2.1"
+	}, 
+	{ 
+		"pid": "5549",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "2.1"
+	}, 
+	{ 
+		"pid": "4877",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "2.1"
+	}, 
+	{ 
+		"pid": "5381",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "2.0"
+	}, 
+	{ 
+		"pid": "5402",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "2.0"
+	}, 
+	{ 
+		"pid": "5279",
+		"uname": "welling+",
+		"cmd": "/opt/google/chrome/chrome",
+		"pmem": "-",
+		"pcpu": "1.9"
+	} 
+] 
